@@ -6,7 +6,19 @@
 	<script src="main.js"></script>
 </head>
 <body>
-	<div>{{ wordcount() }}</div>
-	<textarea ng-model="text" rows="40" cols="60"/><br />
+	<div style="position: absolute; left: 10%;"> 
+		<div>Words: {{ wordcount() }}</div>
+		<input type="text" ng-model="keyword1" />{{ keywordcount(keyword1) }}<br />	
+		<input type="text" ng-model="keyword2" />{{ keywordcount(keyword2) }}<br />	
+		<input type="text" ng-model="keyword3" />{{ keywordcount(keyword3) }}<br />	
+		<input type="text" ng-model="keyword4" />{{ keywordcount(keyword4) }}<br />
+		<input type="text" ng-model="keyword5" />{{ keywordcount(keyword5) }}<br />
+		<input type="text" ng-model="keyword6" />{{ keywordcount(keyword6) }}<br />
+		<input type="text" ng-model="keyword7" />{{ keywordcount(keyword7) }}<br />
+		<input type="text" ng-model="keyword8" />{{ keywordcount(keyword8) }}<br />
+		<input type="text" ng-model="keyword9" />{{ keywordcount(keyword9) }}<br />		
+		<input type="text" ng-model="keyword10"/>{{ keywordcount(keyword10) }}
+	</div>
+	<textarea style="position: absolute; right: 10%; " ng-model="text" rows="40" cols="80"/><br />	
 </body>
 </html>   
