@@ -21,5 +21,22 @@ TextHelperApp.controller('TextHelperController', function ($scope) {
 		}
 		
 	};
+	$scope.occurence = function (number, keyword) {
+		var regex = new RegExp(keyword, "g");
+		if (keyword != '') {
+			
+			if (($scope.text.match(regex) || []).length === number) {
+				return "YES";
+			}
+			else {
+				
+				return "NO";
+				
+			}
+			
+			 
+		}
+		
+	};
 
 });

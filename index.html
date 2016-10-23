@@ -8,16 +8,16 @@
 <body>
 	<div style="position: absolute; left: 10%;"> 
 		<div>Words: {{ wordcount() }}</div>
-		<input type="number" style="width: 50px;" ng-model="keyword1number" /><input type="text" ng-model="keyword1" />{{ keywordcount(keyword1) }}<br />	
-		<input type="number" style="width: 50px;" ng-model="keyword2number" /><input type="text" ng-model="keyword2" />{{ keywordcount(keyword2) }}<br />	
-		<input type="number" style="width: 50px;" ng-model="keyword3number" /><input type="text" ng-model="keyword3" />{{ keywordcount(keyword3) }}<br />	
-		<input type="number" style="width: 50px;" ng-model="keyword4number" /><input type="text" ng-model="keyword4" />{{ keywordcount(keyword4) }}<br />
-		<input type="number" style="width: 50px;" ng-model="keyword5number" /><input type="text" ng-model="keyword5" />{{ keywordcount(keyword5) }}<br />
-		<input type="number" style="width: 50px;" ng-model="keyword6number" /><input type="text" ng-model="keyword6" />{{ keywordcount(keyword6) }}<br />
-		<input type="number" style="width: 50px;" ng-model="keyword7number" /><input type="text" ng-model="keyword7" />{{ keywordcount(keyword7) }}<br />
-		<input type="number" style="width: 50px;" ng-model="keyword8number" /><input type="text" ng-model="keyword8" />{{ keywordcount(keyword8) }}<br />
-		<input type="number" style="width: 50px;" ng-model="keyword9number" /><input type="text" ng-model="keyword9" />{{ keywordcount(keyword9) }}<br />		
-		<input type="number" style="width: 50px;" ng-model="keyword10number" /><input type="text" ng-model="keyword10"/>{{ keywordcount(keyword10) }}
+		{{ occurence(keyword1number,keyword1) }}<input type="number" style="width: 50px;" ng-model="keyword1number" /><input type="text" ng-model="keyword1" />{{ keywordcount(keyword1) }}<br />	
+		{{ occurence(keyword2number,keyword2) }}<input type="number" style="width: 50px;" ng-model="keyword2number" /><input type="text" ng-model="keyword2" />{{ keywordcount(keyword2) }}<br />	
+		{{ occurence(keyword3number,keyword3) }}<input type="number" style="width: 50px;" ng-model="keyword3number" /><input type="text" ng-model="keyword3" />{{ keywordcount(keyword3) }}<br />	
+		{{ occurence(keyword4number,keyword4) }}<input type="number" style="width: 50px;" ng-model="keyword4number" /><input type="text" ng-model="keyword4" />{{ keywordcount(keyword4) }}<br />
+		{{ occurence(keyword5number,keyword5) }}<input type="number" style="width: 50px;" ng-model="keyword5number" /><input type="text" ng-model="keyword5" />{{ keywordcount(keyword5) }}<br />
+		{{ occurence(keyword6number,keyword6) }}<input type="number" style="width: 50px;" ng-model="keyword6number" /><input type="text" ng-model="keyword6" />{{ keywordcount(keyword6) }}<br />
+		{{ occurence(keyword7number,keyword7) }}<input type="number" style="width: 50px;" ng-model="keyword7number" /><input type="text" ng-model="keyword7" />{{ keywordcount(keyword7) }}<br />
+		{{ occurence(keyword8number,keyword8) }}<input type="number" style="width: 50px;" ng-model="keyword8number" /><input type="text" ng-model="keyword8" />{{ keywordcount(keyword8) }}<br />
+		{{ occurence(keyword9number,keyword9) }}<input type="number" style="width: 50px;" ng-model="keyword9number" /><input type="text" ng-model="keyword9" />{{ keywordcount(keyword9) }}<br />		
+		{{ occurence(keyword10number,keyword10) }}<input type="number" style="width: 50px;" ng-model="keyword10number" /><input type="text" ng-model="keyword10"/>{{ keywordcount(keyword10) }}
 	</div>
 	<textarea style="position: absolute; right: 10%; " ng-model="text" rows="40" cols="80"/><br />	
 </body>
