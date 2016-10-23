@@ -21,11 +21,11 @@ TextHelperApp.controller('TextHelperController', function ($scope) {
 		}
 		
 	};
-	$scope.occurence = function (number, keyword) {
+	$scope.occurence = function (number, numberMax, keyword) {
 		var regex = new RegExp(keyword, "g");
 		if (keyword != '') {
 			
-			if (($scope.text.match(regex) || []).length === number) {
+			if (($scope.text.match(regex) || []).length >= number && ($scope.text.match(regex) || []).length <= numberMax) {
 				return "YES";
 			}
 			else {
