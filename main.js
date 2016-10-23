@@ -15,8 +15,11 @@ TextHelperApp.controller('TextHelperController', function ($scope) {
 	$scope.keyword10='';
 	$scope.wordcount = function () { return $scope.text.split(/[^\s]+/).length - 1; };
 	$scope.keywordcount = function (keyword) {
-		var regex = new RegExp("/" + "test" + "/g");
-		return ($scope.text.match(/test/g) || []).length; 
+		var regex = new RegExp(keyword, "g");
+		if (keyword != '') {
+			return ($scope.text.match(regex) || []).length; 
+		}
+		
 	};
 
 });
